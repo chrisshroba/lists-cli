@@ -1,10 +1,15 @@
+About
+=====
+`L` is a command line utility for keeping lists on the command line. It can
+be used for Todo lists, idea lists, grocery lists, anything! 
+
 Usage:
 ------
 ```
-l: print usage
-l -ls: show all lists
-l [list name]: show items from [list name]
-l [list name] [item to add]: Add item to list
+L: print usage
+L -ls: show all lists
+L [list name]: show items from [list name]
+L [list name] [item to add]: Add item to list
 ```
 
 To use:
