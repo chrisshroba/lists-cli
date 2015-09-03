@@ -9,7 +9,7 @@ Usage:
 L: print usage
 L -ls: show all lists
 L [list name]: show items from [list name]
-L [list name] [item to add]: Add item to list
+L [list name] [item to add]: Add item to list (creates list if it doesn't exist)
 ```
 
 To use:
