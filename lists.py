@@ -4,8 +4,11 @@ from textwrap import dedent
 import os
 
 cmd = sys.argv[0]
+
 LIST_DIR = os.path.expanduser("~/.lists")
 EXTENSION = ".txt"
+
+# Create .lists dir if does not exist
 if not os.path.isdir(LIST_DIR):
     os.mkdir(LIST_DIR)
 
@@ -16,15 +19,21 @@ def print_usage():
     {cmd} -ls: show all lists
     {cmd} [list name]: show items from [list name]
     {cmd} [list name] [item to add]: Add item to list
-    """).strip().format(cmd="l")
+    """).strip().format(cmd="L")
 
 def print_lists():
+    """
+    Shows all lists
+    """
     files = get_lists()
     with_lengths = [(open(file).read().count("\n"), file[:-len(EXTENSION)]) for file in files]
     for length, name in with_lengths:
         print "[{length:<3}] {name}".format(length=length, name=name)
 
 def print_list(name):
+    """
+
+    """
     try:
         print open(name+EXTENSION).read()
     except:
