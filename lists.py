@@ -51,7 +51,7 @@ args = sys.argv
 
 if len(args) == 1:
     print_usage()
-elif args[1] == "-ls":
+elif args[1] in ["-ls", "--ls"]:
     print_lists()
 elif len(args) == 2:
     print_list(args[1])

@@ -7,7 +7,7 @@ Usage:
 ------
 ```
 L: print usage
-L -ls: show all lists
+L --ls: show all lists
 L [list name]: show items from [list name]
 L [list name] [item to add]: Add item to list (creates list if it doesn't exist)
 ```
@@ -34,7 +34,7 @@ show off lists-cli
 $ L IDEA add deletion feature to lists-cli
 $ L IDEA
 add deletion feature to lists-cli
-$ L -ls
+$ L --ls
 TODO
 IDEA
 ```
